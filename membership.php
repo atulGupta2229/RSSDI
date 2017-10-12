@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Education Template</title>
+	<title>RSSDI | U.P. Chapter</title>
 	<meta name="viewport" content="width=device-width, initial-scale=0.8">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -36,7 +36,7 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<a href="index.php">
+					<a href="index.html">
 						<li>
 							Home
 						</li>

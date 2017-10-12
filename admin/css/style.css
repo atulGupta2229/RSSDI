@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+.login{
+	margin-top: 10%;
+	height: 310px;
+	margin-bottom: 13%;
+	position: relative;
+	z-index: 999;
+	background: rgba(240,240,240,0.85);
+}
+body{
+	background-size: cover;
+	background-attachment: fixed;
+}
+.login-head{
+	min-height: 60px;
+	background: #009688;
+	padding: 3% 5% 3% 5%;
+}
+.inp{
+	margin-top: 8%;
+	width: 80%;
+	height: 35px;
+	background: rgba(230,230,230,0.8);
+	outline: none;
+	padding:7px;
+	font-size: 1em;
+	transition: width 0.3s;
+	border: 1px solid #00695C;
+}
+.inp:focus{
+	width: 90%;
+}
+.qsand{
+	font-family: 'Quicksand', sans-serif;
+}
+.btn{
+	margin-top: 8%;
+	height: 40px;
+	width: 80%;
+	background-color: #009688;
+	border-radius: 0;
+	color: white;
+	cursor: default;
+	font-size: 20px;
+	outline: none;
+	transition: background-color 0.6s;
+}
+.btn:hover{
+	background-color: #00695C;
+	color: white;
+}
+.ribn{
+	border: none;
+	padding: 1%;
+	margin-top: 4.2%;
+	height: 30px;
+	background-color: #F44336;
+	bottom: 0;
+	color: white;
+}
+.ftr{
+	background: rgba(0,0,0,0.7);
+	min-height: 20px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	color: white;
+	font-size: 12px;
+	padding: 0.5%;
+}
+.panell{
+	margin-top: 3%;
+	min-height: 400px;
+	background: rgba(20,20,20,0.8);
+}
+.rw{
+	min-height: 50px;
+	font-size: 20px;
+	padding: 1.5% 4% 1.5% 4%;
+	background-color: #fbfbfb;
+	border-top: 0.5px solid #999;
+}
+.rw:hover{
+	background-color: #eee;
+}
+.rw div{
+	width: 130px;
+}
+
+#floating-button{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #009688;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: default;
+  box-shadow: 2px 3px 9px #333;
+  transition: 0.5s;
+}
+#floating-button:hover{
+  background-color: #4DB6AC;
+}
+.plus{
+  color: #37474f;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5%;
+  margin: 0;
+  line-height: 55px;
+  font-size: 30px;
+}
+
+#container-floating{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 50px;
+}
+a{
+	text-decoration: none;
+}
+.add-news{
+	padding-top: 15px;
+	background: rgba(230,230,230,0.6);
+	padding-bottom: 45px;
+}
+.ribnn{
+	border: none;
+	padding: 0.6%;
+	height: 30px;
+	background-color: #F44336;
+	bottom: 0;
+	color: white;
+}
+th{
+	text-align: center;
+}
+tbody tr:hover{
+	background: #eee;
+}
+::-webkit-scrollbar {
+    width: 1px;  /* remove scrollbar space */
+    background: rgba(0,0,0,0);
+    padding: 1px;
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px 20px 20px 20px;
+}

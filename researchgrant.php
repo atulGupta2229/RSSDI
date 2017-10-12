@@ -1,7 +1,14 @@
+<?php
+$conn=mysqli_connect("localhost","root","","rssdi");
+$query1="select * from rec_rg";
+$res=mysqli_query($conn, $query1);
+$query2="SELECT * FROM `ug_porjects`";
+$res2=mysqli_query($conn, $query2);
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Education Template</title>
+	<title>RSSDI | U.P. Chapter</title>
 	<meta name="viewport" content="width=device-width, initial-scale=0.8">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -62,7 +69,7 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<a href="index.php">
+					<a href="index.html">
 						<li>
 							Home
 						</li>
@@ -96,10 +103,10 @@
 		<div class="row rg-body">
 			<div class="col-sm-12">
 				<div class="row">
-				<div class="col-sm-1">
+				<div class="col-sm-2">
 					
 				</div>
-				<div class="col-sm-10 rgnav">
+				<div class="col-sm-8 rgnav">
 					<div class="row">
 							<div class="col-sm-4 text-center rgnav-tab active-rg" id="arg" style="padding-top: 1.5%">
 								<span style="cursor: default;">
@@ -117,7 +124,7 @@
 								</span>
 							</div>
 				</div>
-				<div class="col-sm-1">
+				<div class="col-sm-2">
 					
 				</div>
 			</div>
@@ -125,21 +132,71 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-2">
 							
 						</div>
-						<div class="col-sm-10 rg-content">
+						<div class="col-sm-8 rg-content">
 							<div id="avail-RG" style="display: block;">
 								dfsdfd
 							</div>
 							<div id="recp-RG" style="display: none;">
-								wferfg
+								<table class="table table-responsive">
+							<thead class="thead">
+								<tr>
+									<th>S.no.</th>
+									<th>Title</th>
+									<th>Author</th>
+									<th>Institute</th>
+									<th>City</th>
+									<th>Year</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+								while($data=mysqli_fetch_array($res)){
+									?>
+								<tr>
+									<td><?php echo $data["sno"]; ?></td>
+									<td><?php echo $data["title"]; ?></td>
+									<td><?php echo $data["author"]; ?></td>
+									<td><?php echo $data["institute"]; ?></td>
+									<td><?php echo $data["city"]; ?></td>
+									<td><?php echo $data["year"]; ?></td>
+								</tr>
+								
+					<?php
+						}
+					?>
+							</tbody>
+						</table>
 							</div>
 							<div id="under-pro" style="display: none;">
-								dgsfg
+								<table class="table table-responsive">
+							<thead class="thead">
+								<tr>
+									<th>S.no.</th>
+									<th>Title</th>
+									<th>Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+								while($data2=mysqli_fetch_array($res2)){
+									?>
+								<tr>
+									<td><?php echo $data2["sno"]; ?></td>
+									<td><?php echo $data2["title"]; ?></td>
+									<td><?php echo $data2["date"]; ?></td>
+								</tr>
+								
+					<?php
+						}
+					?>
+							</tbody>
+						</table>
 							</div>
 						</div>
-						<div class="col-sm-1">
+						<div class="col-sm-2">
 							
 						</div>
 					</div>
